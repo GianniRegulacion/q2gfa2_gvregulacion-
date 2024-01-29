@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Mooli&family=Sixtyfour&display=swap');
+
+
+*{
+    margin: 0; padding: 0;
+}
+
+body{
+    overflow: hidden;
+    background-image: url(stars.jpg);
+    background-size: cover;
+}
+
+.banner{
+    position: relative;
+    margin-top: 25vh;
+    padding: 5vw;
+    z-index: 2;
+    
+}
+
+.bannertitle{
+    font-size: 30pt;
+    font-weight: 800;
+    font-family: 'AlphaCentauri', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+
+.moon{
+    height: 220px;
+    width: 220px;
+    background: url(moon.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    margin-left: 45vw;
+    margin-top: -30vh;
+    animation: moo 18s linear infinite;
+    z-index: 1;
+}
+
+@keyframes moo {
+    from{
+        transform: rotate(20deg) translateX(200px);
+    }
+
+    to{
+        transform: rotate(360deg) translateX(120px);
+    }
+
+}
+
+.asteroid{
+    height: 220px;
+    width: 220px;
+    background: url(asteroid.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    margin-left: 45vw;
+    margin-top: -30vh;
+    animation: aster 18s linear infinite;
+    z-index: 1;
+}
+
+@keyframes aster {
+    from{
+        transform: rotate(0deg) translateX(270px);
+    }
+
+    to{
+        transform: rotate(360deg) translateX(270px);
+    }
+
+}
+
+.galaxy{
+    height: 120px;
+    width: 120px;
+    background: url(galaxy.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    margin-left: 1vw;
+    margin-top: 10vh;
+    animation: gal 7s linear infinite;
+    z-index: 1;
+}
+
+@keyframes gal{
+    from{
+        transform: rotate(0deg) translateX(200px);
+    }
+
+    to{
+        transform: rotate(360deg) translateX(200px);
+    }
+
+}
+
+.terra2{
+    height: 150px;
+    width: 150px;
+    background: url(terra2.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    animation: ter2 4s linear infinite;
+    margin-top: -75vh;
+    margin-left: 85vw;
+}
+
+@keyframes ter2{
+    0%{
+        transform:scale(0.5);
+    }
+
+    100%{
+        transform:scale(10) translateY(80vh);
+    }
+}
+
+.terra1{
+    height: 120px;
+    width: 120px;
+    background: url(terra1.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    animation: ter 1s linear infinite;
+    margin-top: -55vh;
+    margin-left: 5vw;
+}
+
+@keyframes ter{
+    0%{
+        transform:scale(0.5);
+    }
+
+    50%{
+        transform:scale(1.5);
+    }
+
+    100%{
+        transform:scale(0.5);
+    }
+}
